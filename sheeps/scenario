@@ -1,0 +1,6 @@
+floor grass.png
+
+map 40 30 
+
+instance bush.profile 90
+instance sheep.profile 10
