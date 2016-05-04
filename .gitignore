@@ -1,0 +1,5 @@
+# Application binary
+colony
+# Qt build system
+Makefile
+tmp/
