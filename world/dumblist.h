@@ -45,26 +45,26 @@ template<typename T> List<T>::List(const List& other)
 	start=other.start;
 	iterator=other.iterator;
 	dlink=other.dlink;
-	*dlink++;
+	++(*dlink);
 }
 
 template<typename T> List<T>& List<T>::operator=(const List& other)
 {
-	*dlink--;
+	--(*dlink);
 	if(*dlink==0)
 		clear();
 
 	start=other.start;
 	iterator=other.iterator;
 	dlink=other.dlink;
-	*dlink++;
+	++(*dlink);
 
 	return *this;
 }
 
 template<typename T> List<T>::~List()
 {
-	*dlink--;
+	--(*dlink);
 	if(*dlink==0)
 		clear();
 }

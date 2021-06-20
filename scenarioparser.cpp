@@ -207,7 +207,7 @@ CreatureProfile* ScenarioParser::loadProfile(QString fileName)
 	if(!file.open(QFile::ReadOnly | QFile::Text))
 	{
 		qCritical()<<"Can't open file "<<fileName<<" for read";
-		return false;
+		return nullptr;
 	}
 	QTextStream in(&file);
 	

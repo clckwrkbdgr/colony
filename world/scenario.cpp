@@ -30,7 +30,7 @@ Scenario& Scenario::operator=(Scenario& other)
 {
 	//destroy
 	(*dlink)--;
-	if(dlink<=0)
+	if(*dlink<=0)
 	{
 		profiles.toStart();
 		while(!profiles.atEnd())
@@ -52,7 +52,7 @@ Scenario& Scenario::operator=(Scenario& other)
 Scenario::~Scenario()
 {
 	(*dlink)--;
-	if(dlink<=0)
+	if(*dlink<=0)
 	{
 		profiles.toStart();
 		while(!profiles.atEnd())
